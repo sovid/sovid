@@ -1,5 +1,5 @@
-plugin.video.digi24
+plugin.video.sport.ro
 ==================
 
-Addon Kodi pentru vizionare emisiuni aflate pe digi24.ro
+Addon Kodi pentru vizionare emisiuni aflate pe sport.ro
 
