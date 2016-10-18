@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.digi24"
-       name="Digi24"
+<addon id="plugin.video.sport.ro"
+       name="Sport.ro"
        version="1.0.0"
-       provider-name="kingul">
+       provider-name="sovid">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.common.plugin.cache" version="0.9.1"/>
@@ -12,8 +12,8 @@
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>Emisiuni digi24</summary>
-    <description>Urmareste emisiunile aflate pe Digi24.ro</description>
+    <summary>Emisiuni sport.ro</summary>
+    <description>Urmareste emisiunile aflate pe sport.ro</description>
     <platform>all</platform>
   </extension>
 </addon>
