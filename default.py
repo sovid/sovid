@@ -11,7 +11,7 @@ import sys
 import HTMLParser
 
 
-website = 'http://www.digi24.ro'
+website = 'http://www.sport.ro'
 
 settings = xbmcaddon.Addon(id='plugin.video.digi24')
 
@@ -21,10 +21,10 @@ next_thumb = os.path.join(settings.getAddonInfo('path'), 'resources', 'media', '
 
 
 def ROOT():
-    addDir('Video', 'http://www.digi24.ro/video', 23, movies_thumb, 'emisiuni_link')
-    addDir('Emisiuni', 'http://www.digi24.ro/emisiuni', 23, movies_thumb, 'emisiuni')
-    addDir('Emisiuni exclusiv online', 'http://www.digi24.ro/video/emisiuni/exclusiv-online', 23, movies_thumb, 'emisiuni_link')
-    addDir('24 Minute', 'http://www.digi24.ro/video/emisiuni/exclusiv-online/24-minute', 23, movies_thumb, 'emisiuni_link')
+    addDir('Video', 'http://www.sport.ro/video', 23, movies_thumb, 'emisiuni_link')
+    addDir('Emisiuni', 'http://www.sport.ro/video', 23, movies_thumb, 'video')
+    addDir('Emisiuni exclusiv online', 'http://www.sport.ro/video/emisiuni/exclusiv-online', 23, movies_thumb, 'emisiuni_link')
+    addDir('video', 'http://www.sport.ro/video', 23, movies_thumb, 'emisiuni_link')
     #addDir('Cauta', 'http://nobalance.tvrplus.ro', 3, search_thumb)
 
 
@@ -163,7 +163,7 @@ def addDir(name, url, mode, iconimage, meniu=None, descript=None):
 
 def parse_menu(url, meniu, searchterm=None):
     if url is None:
-        url = 'http://www.digi24.ro'
+        url = 'http://www.sport.ro'
     if meniu == 'video':
         link = get_search(url)
         # f = open( '/storage/.kodi/temp/files.py', 'w' )
